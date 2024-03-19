@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+
+    <style>
+        /* Warna latar belakang body */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        header {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Container untuk konten */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Gaya untuk link yang aktif */
+        a:active {
+            color: purple;
+        }
+
+        /* Gaya untuk tabel dengan border 1px solid hitam */
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        /* Gaya untuk elemen teks dalam tabel */
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Gaya untuk judul tabel */
+        th {
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
+
+        /* Gaya untuk baris ganjil dalam tabel */
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        /* Gaya untuk baris terakhir dalam tabel */
+        tr:last-child {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contoh Gaya CSS</h1>
+    </header>
+
+    <div class="container">
+        <h2>Ini adalah Judul</h2>
+        <p>Ini adalah paragraf. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <a href="#">Ini adalah link</a>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Usia</th>
+                    <th>Kota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ahmad</td>
+                    <td>20</td>
+                    <td>Malang</td>
+                </tr>
+                <tr>
+                    <td>Hazli</td>
+                    <td>21</td>
+                    <td>Surabaya</td>
+                </tr>
+                <tr>
+                    <td>Yahya</td>
+                    <td>25</td>
+                    <td>Sidoarjo</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total: 3 orang</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

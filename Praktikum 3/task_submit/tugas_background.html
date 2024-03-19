@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Background</title>
+    <style>
+        /* Background Warna */
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background Campuran */
+        .container {
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1696671297946-2f9ca4aa537b?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+            background-position: center;
+            padding: 50px;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Background Gambar */
+        .background-gambar {
+            background-image: url(https://images.unsplash.com/photo-1710788186028-521996f8873b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: black;
+        }
+
+        /* Style untuk teks di dalam .background-gambar */
+        .background-gambar h1 {
+            font-size: 48px;
+        }
+
+        /* Style untuk mengatur tata letak tulisan */
+        .content {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .content h1, .content p {
+            margin-bottom: 20px;
+            margin-left: 55px;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Warna -->
+    <section class="content">
+        <h1>Background Warna</h1>
+        <p>Background warna adalah jenis background yang hanya menggunakan warna solid sebagai latar belakang. 
+            Ini adalah cara paling sederhana untuk memberikan latar belakang pada sebuah elemen HTML. 
+            Dalam contoh kode yang disediakan sebelumnya, kita menggunakan background warna untuk elemen body dan header.</p>
+    </section>
+
+    <!-- Background Campuran -->
+    <section class="container content">
+        <h1>Background Campuran</h1>
+        <p>Background campuran adalah kombinasi antara dua atau lebih jenis background, 
+            seperti gambar dengan overlay warna atau gradient. Dalam contoh kode yang baru saya berikan, 
+            bagian kedua menggunakan background campuran. Di sana, kami menggunakan linear gradient sebagai overlay transparan di atas gambar latar belakang.</p>
+    </section>
+
+    <!-- Background Gambar -->
+    <section class="background-gambar content">
+        <h1>Background Gambar</h1>
+        <p>Background gambar menggunakan gambar sebagai latar belakang elemen HTML. 
+            Ini adalah cara untuk memberikan tampilan visual yang menarik pada halaman web. 
+            Dalam contoh kode yang baru saya berikan, bagian ketiga menggunakan background gambar dengan gambar 
+            yang dipilih untuk mengutamakan estetika penulisan dan keselarasan dengan teks yang terletak di atasnya.</p>
+    </section>
+</body>
+</html>
