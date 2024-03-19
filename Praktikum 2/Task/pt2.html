@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <!--Deklarasi dokumen HTML dan penanda awal bahwa 
+    kita akan menggunakan bahasa Inggris (en) sebagai bahasa halaman -->
+
+<head>
+    <!-- Meta tags untuk karakter set dan tampilan responsif -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan HTML Tingkat Lanjut</title>
+</head>
+
+<body>
+    <!-- Konten halaman dimulai di sini -->
+    <!-- Pengenalan HTML Tingkat Lanjut -->
+    <strong>Pengenalan HTML Tingkat Lanjut</strong>
+    <hr>
+    <h1>Hello World</h1>
+    <div>
+        <!-- Formulir dengan berbagai jenis input -->
+        <form action="">
+            <!-- Beberapa input text dengan berbagai atribut -->
+            <p><input type="text" name="default_input" size="25"></p>
+            <p><input type="text" name="dengan_placeholder" placeholder="Masukkan nama anda"></p>
+            <p><input type="text" name="dengan_readonly" value="Informatika"></p>
+            <p></p><input type="text" name="dengan_disable" value="Informatika" disabled></p>
+            <p><input type="text" name="dengan_required" placeholder="input_required" required></p>
+            
+            <!-- Input email, password, dan file -->
+            <p><input type="email" name="email" placeholder="Masukkan email anda"></p>
+            <p><input type="password" name="password" placeholder="Masukkan password anda"></p>
+            <p><input type="file" name="file"></p>
+            <p><input type="hidden" name="hidden" value="1"></p>
+            <p><textarea name="textarea_form" cols="30" rows="10" placeholder="Masukkan deskripsi"></textarea></p>
+            
+            <!-- Pilihan berupa Option yang mengeluarkan drop down pilihan -->
+            <p>
+                <select name="pilihan">
+                    <option value="1">pilihan 1</option>
+                    <option value="2">pilihan 2</option>
+                    <option value="3">pilihan 3</option>
+                    <option value="4">pilihan 4</option>
+                    <option value="5">pilihan 5</option>
+                </select>
+            </p>
+            
+            <p> <!-- Pilihan radio gender -->
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Laki-Laki</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Perempuan</label>
+            </p>
+            <p><!-- Pilihan radio age -->
+                <input type="radio" name="age" value="adult" id="adult">
+                <label for="adult">Dewasa</label>
+                <input type="radio" name="age" value="child" id="child">
+                <label for="child">Anak-Anak</label>
+            </p>
+            <p> <!-- Pilihan checkbox -->
+                <input type="checkbox" name="checkbox" value="checkbox1" id="checkbox1">
+                <label for="checkbox1">Checkbox 1</label>
+                <input type="checkbox" name="checkbox" value="checkbox2" id="checkbox2">
+                <label for="checkbox2">Checkbox 2</label>  
+
+            </p><!-- Tombol reset, submit, dan biasa -->
+                <input type="reset" value="Reset" name="Reset">
+                <input type="submit" value="Kirim" name="submit">
+                <input type="Button" value="button" name="Button">
+            <p>
+            </form>
+    </div>
+    <div>
+        <!-- Element embed untuk menampilkan PDF -->
+        <h2>Element Embed</h2>
+        <hr>
+        <embed src="assets2/assets/" type="application/pdf" width="800" height="1000">
+    </div>
+    <div>
+        <!-- Element objek untuk menampilkan PDF -->
+        <h2>Element Objek</h2>
+        <hr>
+        <object data="assets2/assets/file.pdf" type="application/pdf" width="800" height="1000"></object>
+    </div>
+    <div>
+        <!-- Element iFrame untuk menampilkan video YouTube dan peta Google -->
+        <h2>Element iFrame</h2>
+        <hr>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v8fKPAIVObY?si=IwDPOd7IyYfY8mNX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4870.1833903460865!2d112.72896944343378!3d-7.311283092605157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbd1cb925a1d%3A0x1dbecb0b2e9b059f!2sUniversitas%20Telkom%20Surabaya!5e0!3m2!1sid!2sid!4v1709774129671!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div>
+        <!-- Element Semantik -->
+        <h2>Element Semantik</h2>
+        <hr>
+        <header>Ini Header</header>
+        <nav>Ini Navigation</nav>
+        <main>Ini Main</main>
+        <section>Ini Section</section>
+        <aside>Ini Aside</aside>
+        <footer>Ini Footer</footer>
+    </div>
+    <br><br>
+    <div>
+        <hr>
+        <strong>Program Studi Informatika Telkom University Surabaya</strong>
+    </div>
+</body>
+</html>
