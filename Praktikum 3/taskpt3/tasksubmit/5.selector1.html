@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector 1</title>
+    <style>
+        *{
+            color: brown;
+            background-color: bisque;
+        }
+
+        .judul {
+            color: black;
+        }
+
+        p.success {
+            color: green;
+        }
+
+        p#danger {
+            color: blue;
+        }
+        
+        .font-xs {
+            color: red;
+            font-size: 24px;
+        }
+
+        a[href] {
+            color: aqua;
+            font-size: 50px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-transform: uppercase;
+            
+        }
+
+        span#penting {
+            color: red;
+            font-weight: bold;
+        }
+
+        p.judul {
+            color: red;
+        }
+
+        div p {
+            font-size: x-large;
+        }
+
+        div > p {
+            color: blueviolet;
+        }
+
+        /* div section p{
+            font-size: small;
+        } */
+    </style>
+</head>
+<body>
+    <h1 class="font-xs">Hello World</h1>
+    <p>This is Paragraph One</p>
+    <hr>
+    <h2 class="judul">Ini adalah Judul Kedua</h2>
+    <p>This is Paragraph Two</p>
+    <hr>
+    <h3>This is Heading Three</h3>
+    <p class="danger">Login Gagal</p>
+    <p id="id1">Login Gagal</p>
+    <hr>
+    <h2>This is Heading Two</h2>
+    <p class="success">Login Berhasil</p>
+    <hr>
+    <a>Link not Active</a>
+    <a href="https://bif.telkomuniversity.ac.id/" target="_blank">Link Activated</a>
+    <hr>
+    <p class="judul">Lorem ipsum dolor sit amet <span id="penting">Pemrograman Web Informatika </span>consectetur adipisicing elit. Eveniet alias excepturi, eaque rerum quo rem, recusandae officia fugiat voluptates quis quod harum voluptatum et esse hic eos placeat, facilis illum!</p>
+    <hr>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aspernatur dolores totam blanditiis quae! Quos, non! Repudiandae nobis dolorum sequi quaerat natus nam id recusandae similique, voluptate corrupti voluptatibus distinctio.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aspernatur dolores totam blanditiis quae! Quos, non! Repudiandae nobis dolorum sequi quaerat natus nam id recusandae similique, voluptate corrupti voluptatibus distinctio.</p>
+
+        <section>
+            <p>Inside Section Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic eaque non in architecto earum modi dicta fugit temporibus alias repellendus! Unde corporis, quae commodi optio deserunt perferendis voluptatem nobis tenetur!</p>
+            <p>Inside Section Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic eaque non in architecto earum modi dicta fugit temporibus alias repellendus! Unde corporis, quae commodi optio deserunt perferendis voluptatem nobis tenetur!</p>
+        </section>
+    </div>
+</body>
+</html>
