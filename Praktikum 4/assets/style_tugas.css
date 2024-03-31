@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(199, 199, 199);
+}
+
+.sidebar {
+    height: 100%;
+    width: 125px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(228,26,135);
+    background: linear-gradient(180deg, rgba(228,26,135,1) 0%, rgba(128,0,255,1) 100%);
+    padding-top: 15%;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.sidebar ul li {
+    text-align: center;
+}
+
+
+.sidebar ul li a {
+    display: block; 
+    padding: 20px 20px; 
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background-color: #4b0082;
+    font-weight: bold;
+}
+
+.content {
+    margin-left: 125px;
+    padding: 30px;
+    display: flex; 
+    align-items: center;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 36px;
+    font-weight: 50;
+    margin: 0;
+}
+
+.content h2 {
+    font-size: 24px;
+    font-weight: 750;
+    margin: 0;
+    
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    margin-right: 20px; 
+    padding: 20px; 
+}
+
+.hero-content p {
+    margin-right: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.hero-content img {
+    width: 150px; /* Sesuaikan ukuran logo */
+    height: auto;
+    margin-right: 20px; 
+    margin-bottom: 5%;
+}
+
+.action-btn {
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: gray;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: purple;
+}
+
+
+.footer {
+    position: fixed;
+    font-size: 12px;
+    bottom: 0;
+    width: 100%;
+    background-color: gainsboro;
+    padding: 25px 0;
+    color: gray;
+    text-align: center;
+    z-index: -1;
+}
+
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}
+
+.footer ul li a {
+    color: gray;
+    text-decoration: none;
+}
+
+.footer ul li img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer ul li p {
+    margin: 0;
+    padding-top: 10px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        background: rgb(228,26,135);
+        background: linear-gradient(90deg, rgba(228,26,135,1) 0%, rgba(128,0,255,1) 100%);
+        height: auto;
+        width: 100%; 
+        padding-top: 0;
+        justify-content: center;
+    }
+
+    .sidebar ul {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center;
+    }
+
+    .sidebar ul li {
+        text-align: center;
+        flex: 1;
+    }
+
+    .content {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-top: 20%;
+        margin-bottom: 10%;
+        padding: 0;
+    }
+
+    .hero-content{
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .hero-content h1 {
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        text-align: center;
+    }
+
+    .content img {
+        margin: 0;
+    }
+
+    .content p {
+        margin: 24px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .action-btn {
+        width: 50%;
+    }
+}
