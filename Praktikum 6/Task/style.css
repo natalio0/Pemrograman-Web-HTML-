@@ -1,0 +1,75 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: white;
+    background-image: url("pexels-bruno-thethe-1910236.jpg");
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container form {
+    width: 25%;
+    padding: 0px 5%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #000d4e;
+    overflow-y: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+    width: 100%; /* Sesuaikan dengan padding dan border */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Hindari pengaruh padding dan border pada lebar */
+}   
+
+input[type="submit"] {
+    width: 100%;
+    margin: 30px auto 0;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+}
+
+
+
+input[type="submit"]:hover {
+    background-color: #116dce;
+}
+
+.error {
+    color: rgb(224, 224, 224);
+    font-size: 0.9em;
+}
